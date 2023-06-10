@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind crash course</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Poppins", "sans-serif"],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="bg-slate-100 w-[240px] m-6 p-4 rounded">
+      <h1 class="text-xl">the system</h1>
+      <div class="bg-slate-300 h-20 rounded my-3"></div>
+      <p class="text-sm text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+      </p>
+      <div class="mt-3 flex">
+        <button
+          class="flex-1 bg-purple-400 text-white p-1 rounded text-lg me-2"
+        >
+          Save
+        </button>
+        <div class="bg-pink-400 w-9 rounded flex justify-center items-center">
+          <i class="bx bx-download text-white text-xl"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-100 w-[400px] m-5 p-3 rounded">
+      <table class="w-full border-collapse">
+        <thead>
+          <tr>
+            <th
+              class="border-b border-slate-500 py-1 pl-3 font-semibold text-left"
+            >
+              Name
+            </th>
+            <th
+              class="border-b border-slate-500 py-1 pl-3 font-semibold text-left"
+            >
+              Country
+            </th>
+            <th
+              class="border-b border-slate-500 py-1 pl-3 font-semibold text-left"
+            >
+              Age
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border-b border-slate-400 py-2 pl-3 text-left text-xs">
+              Hudeifa abdirashid
+            </td>
+            <td class="border-b border-slate-400 py-2 pl-3 text-left text-xs">
+              Somalia
+            </td>
+            <td class="border-b border-slate-400 py-2 pl-3 text-left text-xs">
+              23
+            </td>
+          </tr>
+          <tr>
+            <td class="border-b border-slate-400 py-2 pl-3 text-left text-xs">
+              Hudeifa abdirashid
+            </td>
+            <td class="border-b border-slate-400 py-2 pl-3 text-left text-xs">
+              Somalia
+            </td>
+            <td class="border-b border-slate-400 py-2 pl-3 text-left text-xs">
+              23
+            </td>
+          </tr>
+          <tr>
+            <td class="py-2 pl-3 text-left text-xs">Hudeifa abdirashid</td>
+            <td class="py-2 pl-3 text-left text-xs">Somalia</td>
+            <td class="py-2 pl-3 text-left text-xs">23</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

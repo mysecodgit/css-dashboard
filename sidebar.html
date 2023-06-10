@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sidebar.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Side bar</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">Sidey</div>
+
+      <ul class="items">
+        <li class="item"><i class="item-icon bx bx-layer"></i>Dashboard</li>
+        <li class="item active"><i class="item-icon bx bx-user"></i>Users</li>
+        <li class="item"><i class="item-icon bx bx-bowl-hot"></i>customers</li>
+        <li class="item"><i class="item-icon bx bx-printer"></i>invoices</li>
+        <li class="item"><i class="item-icon bx bx-cog"></i>settings</li>
+      </ul>
+    </div>
+    <div class="nav-bar">
+      <div class="left">
+        <i class="bx bx-menu"></i>
+        <input type="text" class="search" placeholder="search" />
+        <i class="bx bx-search"></i>
+      </div>
+      <ul>
+        <li>logout</li>
+      </ul>
+    </div>
+
+    <div class="main-container">
+      <div class="cards">
+        <div class="card">
+          <div>
+            <h3>Users</h3>
+            <i class="bx bx-book i-blue"></i>
+          </div>
+          <p>60</p>
+        </div>
+        <div class="card">
+          <div>
+            <h3>Orders</h3>
+            <i class="bx bx-pen i-orange"></i>
+          </div>
+          <p>$22.23</p>
+        </div>
+        <div class="card">
+          <div>
+            <h3>Sales</h3>
+            <i class="bx bx-chart i-red"></i>
+          </div>
+          <p>$100.59</p>
+        </div>
+        <div class="card">
+          <div>
+            <h3>Invoices</h3>
+            <i class="bx bx-stats i-green"></i>
+          </div>
+          <p>24</p>
+        </div>
+      </div>
+
+      <div class="second-row">
+        <div class="orders">
+          <div class="header">
+            <h3>orders</h3>
+            <!-- <button>see all</button> -->
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>customer</th>
+                <th>amount</th>
+                <th>status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-03-03</td>
+                <td>hudeifa abdi</td>
+                <td>$980</td>
+                <td>
+                  <span class="status warning">pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>2023-03-03</td>
+                <td>hudeifa abdi</td>
+                <td>$980</td>
+                <td>
+                  <span class="status warning">pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>2023-03-03</td>
+                <td>hudeifa abdi</td>
+                <td>$980</td>
+                <td>
+                  <span class="status warning">pending</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="orders-chart">
+          <h4>orders</h4>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="module" src="sidebar.js"></script>
+  </body>
+</html>
