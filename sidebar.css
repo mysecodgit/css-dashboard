@@ -228,6 +228,7 @@ td {
 .orders-chart {
   background: #fff;
   border-radius: 3px;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
